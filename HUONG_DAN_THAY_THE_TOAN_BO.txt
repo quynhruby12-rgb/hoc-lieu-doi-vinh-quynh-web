@@ -1,0 +1,30 @@
+HƯỚNG DẪN THAY TOÀN BỘ WEBSITE CŨ
+
+1. Giải nén file ZIP.
+2. Mở repository GitHub: hoc-lieu-doi-vinh-quynh-web.
+3. Xóa toàn bộ file và thư mục cũ trong repository.
+4. Tải TOÀN BỘ nội dung bên trong thư mục giải nén lên nhánh main:
+   - admin
+   - assets
+   - data
+   - documents
+   - quizzes
+   - index.html
+   - netlify.toml
+   - README.md
+5. Không đưa cả thư mục cha lên GitHub. index.html phải nằm ngoài cùng.
+6. Chờ Netlify deploy tự động.
+7. Kiểm tra:
+   Trang chính: https://hoc-lieu-so-lien-doi-vinh-quynh.netlify.app/
+   Quản trị:    https://hoc-lieu-so-lien-doi-vinh-quynh.netlify.app/admin/
+
+CẤU HÌNH NETLIFY
+- Base directory: để trống
+- Build command: để trống
+- Publish directory: .
+- Production branch: main
+
+LƯU Ý
+- Không sửa lẫn index.html ngoài cùng với admin/index.html.
+- index.html là trang học liệu.
+- admin/index.html là trang Decap CMS.

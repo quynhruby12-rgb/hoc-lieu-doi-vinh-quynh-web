@@ -1,0 +1,37 @@
+{
+  "section_label": "Góc đội viên Vĩnh Quỳnh",
+  "section_title": "Hoạt động – Thành tích – Việc tốt",
+  "section_intro": "Giới thiệu hình ảnh hoạt động, gương đội viên tiêu biểu và các công trình măng non.",
+  "items": [
+    {
+      "title": "Ngày hội Thiếu nhi vui khỏe",
+      "description": "Rèn luyện thể chất và tinh thần đoàn kết.",
+      "image": ""
+    },
+    {
+      "title": "Sinh hoạt dưới cờ",
+      "description": "Giáo dục truyền thống và tuyên dương việc tốt.",
+      "image": ""
+    },
+    {
+      "title": "Kế hoạch nhỏ",
+      "description": "Phong trào tiết kiệm và bảo vệ môi trường.",
+      "image": ""
+    },
+    {
+      "title": "Gương việc tốt",
+      "description": "Tuyên dương đội viên có hành động đẹp.",
+      "image": ""
+    },
+    {
+      "title": "Trò chơi lớn",
+      "description": "Rèn kỹ năng tập thể và dấu đi đường.",
+      "image": ""
+    },
+    {
+      "title": "Công trình măng non",
+      "description": "Sản phẩm và hoạt động do thiếu nhi thực hiện.",
+      "image": ""
+    }
+  ]
+}
