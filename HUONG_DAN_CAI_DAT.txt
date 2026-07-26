@@ -1,0 +1,14 @@
+HƯỚNG DẪN CÀI ĐẶT DECAP CMS
+
+1. Tạo repository GitHub và tải toàn bộ gói lên nhánh main.
+2. Trên Netlify: Add new project > Import an existing project > chọn repository.
+3. Build command để trống; Publish directory nhập dấu chấm: .
+4. Deploy website.
+5. Trong Netlify bật Identity, chọn Invite only.
+6. Bật Git Gateway.
+7. Mời email quản trị.
+8. Truy cập https://ten-website.netlify.app/admin/ để cập nhật nội dung.
+
+Trang quản trị cho phép sửa thông tin chung, chuyên đề, học liệu, hoạt động, hình ảnh và câu hỏi mẫu. Sau khi nhấn Publish, thay đổi được ghi vào GitHub và Netlify tự cập nhật trang.
+
+Lưu ý: Không mở index.html trực tiếp bằng file:// vì trang đọc dữ liệu JSON. Hãy chạy qua hosting hoặc dùng lệnh python -m http.server 8000 để xem thử.

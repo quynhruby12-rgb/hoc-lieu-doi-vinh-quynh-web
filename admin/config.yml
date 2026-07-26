@@ -1,0 +1,95 @@
+backend:
+  name: git-gateway
+  branch: main
+local_backend: true
+locale: vi
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+collections:
+  - name: "website"
+    label: "Quản lý nội dung website"
+    files:
+      - name: "site"
+        label: "Thông tin chung và trang chủ"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - {{ label: "Tên trường", name: "school_name", widget: "string" }}
+          - {{ label: "Tên website", name: "site_title", widget: "string" }}
+          - {{ label: "Dòng phụ", name: "site_subtitle", widget: "string" }}
+          - {{ label: "Khẩu hiệu", name: "slogan", widget: "string" }}
+          - {{ label: "Nhãn mở đầu", name: "hero_badge", widget: "string" }}
+          - {{ label: "Tiêu đề lớn", name: "hero_title", widget: "string" }}
+          - {{ label: "Nội dung giới thiệu", name: "hero_intro", widget: "text" }}
+          - {{ label: "Ảnh nhân vật", name: "hero_image", widget: "image" }}
+          - {{ label: "Mô tả chân trang", name: "footer_description", widget: "text" }}
+          - {{ label: "Email liên hệ", name: "contact_email", widget: "string" }}
+          - {{ label: "Người phụ trách", name: "manager_name", widget: "string" }}
+      - name: "topics"
+        label: "Chuyên đề"
+        file: "data/topics.json"
+        format: "json"
+        fields:
+          - {{ label: "Nhãn mục", name: "section_label", widget: "string" }}
+          - {{ label: "Tiêu đề mục", name: "section_title", widget: "string" }}
+          - {{ label: "Giới thiệu", name: "section_intro", widget: "text" }}
+          - label: "Danh sách chuyên đề"
+            name: "items"
+            widget: "list"
+            summary: "{{{{fields.title}}}}"
+            fields:
+              - {{ label: "Biểu tượng", name: "icon", widget: "string" }}
+              - {{ label: "Tên chuyên đề", name: "title", widget: "string" }}
+              - {{ label: "Mô tả", name: "description", widget: "text" }}
+              - {{ label: "Liên kết", name: "link", widget: "string", default: "#" }}
+      - name: "resources"
+        label: "Thư viện học liệu"
+        file: "data/resources.json"
+        format: "json"
+        fields:
+          - {{ label: "Nhãn mục", name: "section_label", widget: "string" }}
+          - {{ label: "Tiêu đề mục", name: "section_title", widget: "string" }}
+          - {{ label: "Giới thiệu", name: "section_intro", widget: "text" }}
+          - label: "Danh sách học liệu"
+            name: "items"
+            widget: "list"
+            summary: "{{{{fields.title}}}}"
+            fields:
+              - {{ label: "Loại", name: "type", widget: "select", options: ["Video", "Bài học", "PDF", "Mật thư", "Trò chơi", "Âm thanh"] }}
+              - {{ label: "Biểu tượng", name: "icon", widget: "string", required: false }}
+              - {{ label: "Ảnh đại diện", name: "image", widget: "image", required: false }}
+              - {{ label: "Tên học liệu", name: "title", widget: "string" }}
+              - {{ label: "Mô tả", name: "description", widget: "text" }}
+              - {{ label: "Liên kết hoặc tệp", name: "link", widget: "string", default: "#" }}
+              - {{ label: "Cho tải xuống", name: "download", widget: "boolean", default: false }}
+      - name: "activities"
+        label: "Góc đội viên và hoạt động"
+        file: "data/activities.json"
+        format: "json"
+        fields:
+          - {{ label: "Nhãn mục", name: "section_label", widget: "string" }}
+          - {{ label: "Tiêu đề mục", name: "section_title", widget: "string" }}
+          - {{ label: "Giới thiệu", name: "section_intro", widget: "text" }}
+          - label: "Danh sách hoạt động"
+            name: "items"
+            widget: "list"
+            summary: "{{{{fields.title}}}}"
+            fields:
+              - {{ label: "Tên hoạt động", name: "title", widget: "string" }}
+              - {{ label: "Mô tả", name: "description", widget: "text" }}
+              - {{ label: "Ảnh", name: "image", widget: "image", required: false }}
+      - name: "quiz"
+        label: "Câu hỏi kiểm tra trên trang chủ"
+        file: "data/quiz.json"
+        format: "json"
+        fields:
+          - {{ label: "Tên bài kiểm tra", name: "title", widget: "string" }}
+          - {{ label: "Câu hỏi", name: "question", widget: "text" }}
+          - label: "Các đáp án"
+            name: "answers"
+            widget: "list"
+            field: {{ label: "Đáp án", name: "answer", widget: "string" }}
+          - {{ label: "Vị trí đáp án đúng", name: "correct_index", widget: "number", value_type: "int", min: 0 }}
+          - {{ label: "Thông báo đúng", name: "success_message", widget: "string" }}
+          - {{ label: "Thông báo sai", name: "failure_message", widget: "string" }}
+          - {{ label: "Liên kết bài đầy đủ", name: "full_quiz_link", widget: "string" }}

@@ -1,0 +1,39 @@
+{
+  "section_label": "Thư viện học liệu",
+  "section_title": "Học nhanh – Nhớ lâu – Dễ thực hành",
+  "section_intro": "Có thể đăng video, hình ảnh, tài liệu PDF, bài học và trò chơi tương tác.",
+  "items": [
+    {
+      "type": "Video",
+      "icon": "🟥",
+      "title": "Cách thắt khăn quàng đỏ",
+      "description": "Hướng dẫn từng bước kèm hình minh họa.",
+      "link": "#",
+      "download": false
+    },
+    {
+      "type": "Bài học",
+      "icon": "↪️",
+      "title": "Bộ dấu đi đường cơ bản",
+      "description": "Nhận biết ký hiệu và tình huống sử dụng.",
+      "link": "#",
+      "download": false
+    },
+    {
+      "type": "Mật thư",
+      "icon": "🔐",
+      "title": "Hành trình tìm Cờ lệnh",
+      "description": "Đọc mô tả và chọn đúng dấu cho từng chặng.",
+      "link": "quizzes/mat-thu-dau-duong.html",
+      "download": false
+    },
+    {
+      "type": "Âm thanh",
+      "icon": "🎵",
+      "title": "Trống Đội và bài hát",
+      "description": "Nghe, luyện tập và ghi nhớ nhịp điệu.",
+      "link": "#",
+      "download": false
+    }
+  ]
+}

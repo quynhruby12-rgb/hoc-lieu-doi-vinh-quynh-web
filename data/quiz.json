@@ -1,0 +1,14 @@
+{
+  "title": "Bài kiểm tra mẫu",
+  "question": "Dấu nào chỉ “Quẹo phải”?",
+  "answers": [
+    "Theo lối này",
+    "Quẹo phải",
+    "Đường cấm",
+    "Quay trở lại"
+  ],
+  "correct_index": 1,
+  "success_message": "Chính xác! Đây là dấu quẹo phải.",
+  "failure_message": "Chưa đúng, hãy quan sát lại dấu quẹo phải.",
+  "full_quiz_link": "quizzes/mat-thu-dau-duong.html"
+}
